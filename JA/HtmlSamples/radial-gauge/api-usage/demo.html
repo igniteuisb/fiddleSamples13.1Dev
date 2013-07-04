@@ -1,0 +1,39 @@
+<script src="http://igniteuisamples.ja.dev.infragistics.local/13-1/js/modernizr.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.0/jquery-ui.min.js"></script>
+<script src="http://cdn-na.infragistics.com/jquery/20131/beta/js/infragistics.core.js"></script>
+<script src="http://cdn-na.infragistics.com/jquery/20131/beta/js/infragistics.dv.js"></script>
+<script src="http://igniteuisamples.ja.dev.infragistics.local/13-1/js/apiviewer.js"></script>
+<link href="http://cdn-na.infragistics.com/jquery/20131/beta/css/themes/infragistics/infragistics.theme.css" rel="stylesheet"></link>
+<link href="http://cdn-na.infragistics.com/jquery/20131/beta/css/structure/infragistics.css" rel="stylesheet"></link>
+<link href="http://igniteuisamples.ja.dev.infragistics.local/13-1/css/apiviewer.css" rel="stylesheet" type="text/css"></link>
+<script src="http://cdn-na.infragistics.com/jquery/20131/beta/js/i18n/infragistics-ja.js"></script>
+
+<table id="radialgauge">
+    </table>
+
+    <div class="api-explorer">  
+        <table>
+	        <tr>
+                <td><span>針値の入力/設定: </span></td>
+                <td>
+                    <div class="select-editable" style="margin:0px">
+                        <select id="selectValue" onchange="this.nextElementSibling.value=this.value"></select>
+                        <input type="text" id="needleValue" name="format" value=""></input>
+                    </div>
+                </td>
+                <td><input type="button" id="changeNeedleValue" value="針値の設定"></input></td>
+                <td><span>$("#radialgauge").igRadialGauge("option", "value", value);</span></td>
+            </tr>
+            <tr style="height:10px"></tr>
+            <tr>
+                <td><span>現在の針値の取得: </span></td>
+                <td><span style="width:60px"></span></td>
+                <td><input type="button" id="getNeedleValue" value="針値の取得"></input></td>
+                <td><span>$("#radialgauge").igRadialGauge("option", "value");</span></td>
+            </tr>
+            <tr style="height:20px"></tr>
+        </table>
+    </div>
+
+    <div class="api-viewer"></div>

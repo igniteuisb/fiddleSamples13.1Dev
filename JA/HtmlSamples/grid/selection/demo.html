@@ -1,0 +1,79 @@
+<script src="http://igniteuisamples.ja.dev.infragistics.local/13-1/js/modernizr.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.0/jquery-ui.min.js"></script>
+<script src="http://cdn-na.infragistics.com/jquery/20131/beta/js/infragistics.core.js"></script>
+<script src="http://cdn-na.infragistics.com/jquery/20131/beta/js/infragistics.lob.js"></script>
+<script src="http://igniteuisamples.ja.dev.infragistics.local/13-1/js/apiviewer.js"></script>
+<script src="http://igniteuisamples.ja.dev.infragistics.local/13-1/js-data/nw-employees"></script>
+<link href="http://cdn-na.infragistics.com/jquery/20131/beta/css/themes/infragistics/infragistics.theme.css" rel="stylesheet"></link>
+<link href="http://cdn-na.infragistics.com/jquery/20131/beta/css/structure/infragistics.css" rel="stylesheet"></link>
+<link href="http://igniteuisamples.ja.dev.infragistics.local/13-1/css/apiviewer.css" rel="stylesheet" type="text/css"></link>
+<script src="http://cdn-na.infragistics.com/jquery/20131/beta/js/i18n/infragistics-ja.js"></script>
+
+<div>
+        <fieldset id="cellSelectionState">
+            <legend>セル選択のオプション </legend>
+
+            <input type="checkbox" id="multipleCellSelection"></input>
+            複数選択<br />
+
+            <input type="checkbox" id="multipleCellSelectOnClick"></input>
+            クリックして複数セルの選択
+            <br />
+
+            <input type="checkbox" id="touchDragSelect"></input>
+            タッチしてドラッグ選択<br />
+
+            <button id="applyCellSelection" style="width: 300px">セル選択の適用</button>
+
+        </fieldset>
+    </div>
+    <br />
+    
+    <table id="cellSelectionGrid">
+    </table>
+
+    <br />
+
+    <div>
+        <fieldset id="rowSelectorsState">
+            <legend>RowSelectors オプション </legend>
+
+            <table>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="enableRowNumberingchkb"></input>
+                        RowNumbering を有効にする<br />
+
+                        <input type="checkbox" id="enableCheckboxeschkb"></input>
+                        チェックボックスを有効にする<br />
+
+                        <input type="text" id="rowSelectorColumnWidthEditor"></input>
+                        行セレクター列の幅<br />
+                    </td>
+                    <td>
+                        <select id="selectionMode">
+                            <option value="row" label="row">Row</option>
+                            <option value="cell" label="cell">Cell</option>
+                        </select>
+                        選択モード
+                        <br />
+                        <br />
+                        <input type="checkbox" id="multipleSelection"></input>
+                        複数選択<br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="applyRowSelectors" style="width: 300px">RowSelectors オプションの適用</button>
+                    </td>
+                </tr>
+            </table>
+
+        </fieldset>
+    </div>
+
+    <br />
+    
+    <table id="rowSelectorsGrid">
+    </table>

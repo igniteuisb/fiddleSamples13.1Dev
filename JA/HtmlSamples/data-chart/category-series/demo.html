@@ -1,0 +1,36 @@
+<script src="http://igniteuisamples.ja.dev.infragistics.local/13-1/js/modernizr.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.0/jquery-ui.min.js"></script>
+<script src="http://cdn-na.infragistics.com/jquery/20131/beta/js/infragistics.core.js"></script>
+<script src="http://cdn-na.infragistics.com/jquery/20131/beta/js/infragistics.dv.js"></script>
+<link href="http://cdn-na.infragistics.com/jquery/20131/beta/css/themes/infragistics/infragistics.theme.css" rel="stylesheet"></link>
+<link href="http://cdn-na.infragistics.com/jquery/20131/beta/css/structure/infragistics.css" rel="stylesheet"></link>
+<script src="http://cdn-na.infragistics.com/jquery/20131/beta/js/i18n/infragistics-ja.js"></script>
+
+<script id="tooltipTemplate1" type="text/x-jquery-tmpl">
+        <div id="tooltip" class="ui-widget-content ui-corner-all">
+            <span id="tooltipValue">値: ${item.Value1}</span>
+        </div>
+    </script>
+<script id="tooltipTemplate2" type="text/x-jquery-tmpl">
+        <div id="Div1" class="shadow ui-widget-content ui-corner-all">
+            <span id="Span1">値: ${item.Value2}</span>
+        </div>
+    </script>
+
+<div class="selectionOptions">
+        シリーズ タイプ:&nbsp
+        <select id="seriesType">
+            <option value="area">エリア チャート</option>
+            <option value="column">柱状チャート</option>
+            <option value="line" selected="selected">折れ線チャート</option>
+            <option value="splineArea">スプライン エリア チャート</option>
+            <option value="spline">スプライン チャート</option>
+            <option value="stepArea">ステップ エリア チャート</option>
+            <option value="stepLine">ステップ折れ線チャート</option>
+            <option value="waterfall">ウォーターフォール</option>
+            <option value="point">ポイント (New)</option>
+        </select>
+    </div>
+
+    <div id="chart"></div>

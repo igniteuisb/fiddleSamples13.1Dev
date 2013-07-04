@@ -1,0 +1,100 @@
+<script src="http://igniteuisamples.ja.dev.infragistics.local/13-1/js/modernizr.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.0/jquery-ui.min.js"></script>
+<script src="http://cdn-na.infragistics.com/jquery/20131/beta/js/infragistics.core.js"></script>
+<script src="http://cdn-na.infragistics.com/jquery/20131/beta/js/infragistics.lob.js"></script>
+<script src="http://igniteuisamples.ja.dev.infragistics.local/13-1/js/apiviewer.js"></script>
+<script src="http://igniteuisamples.ja.dev.infragistics.local/13-1/js-data/northwind"></script>
+<link href="http://cdn-na.infragistics.com/jquery/20131/beta/css/themes/infragistics/infragistics.theme.css" rel="stylesheet"></link>
+<link href="http://cdn-na.infragistics.com/jquery/20131/beta/css/structure/infragistics.css" rel="stylesheet"></link>
+<link href="http://igniteuisamples.ja.dev.infragistics.local/13-1/css/apiviewer.css" rel="stylesheet" type="text/css"></link>
+<script src="http://cdn-na.infragistics.com/jquery/20131/beta/js/i18n/infragistics-ja.js"></script>
+
+<div class="api-explorer">
+        <fieldset id="editOptions">
+            <legend>設定の編集</legend>
+            <select id="editMode">
+                <option selected="selected">row</option>
+                <option>cell</option>
+                <option>rowedittemplate</option>
+                <option>none</option>
+            </select>
+            <br />
+            <select id="startEditTriggers">
+                <option value="click,F2,enter" selected="selected">click,F2,enter</option>
+                <option value="dblclick,F2,enter">dblclick,F2,enter</option>
+                <option value="dblclick">dblclick</option>
+                <option value="click">click</option>
+                <option value="click,F2">click,F2</option>
+                <option value="F2,enter">F2,enter</option>
+            </select>
+            <br />
+            <input type="checkbox" id="showButtons" checked="checked"></input><label for="showButtons">完了/キャンセル ボタンの表示</label>
+        </fieldset>
+        <br />
+
+        <fieldset id="deletingOptions">
+            <legend>設定の削除</legend>
+            <input type="checkbox" id="enableDelete" checked="checked"></input><label for="enableDelete">行の削除を有効にする</label>
+            <br />
+            行インデックスの選択<span id="rowSelect"></span>
+            <br />
+            <input type="button" id="deleteRow" value="行の削除"></input>
+        </fieldset>
+        <br />
+
+        <fieldset id="addingOptions">
+            <legend>設定の追加</legend>
+
+            <input type="checkbox" id="enableAddRow" checked="checked"></input><label for="enableAddRow">行の追加を有効にする</label>
+            <br />
+            <table class="standard-grid">
+                <tr>
+                    <td>従業員 ID
+			                <br />
+                        <input id="employeeID" type="text" readonly="readonly"></input>
+                    </td>
+                    <td>名前
+			                <br />
+                        <input id="firstName" type="text"></input>
+                    </td>
+                    <td>名字
+			                <br />
+                        <input id="lastName" type="text"></input>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>役職
+			                <br />
+                        <input id="title" type="text"></input>
+                    </td>
+                    <td>生年月日
+			                <br />
+                        <input id="birthDate" type="text"></input>
+                    </td>
+                    <td>郵便番号 
+			                <br />
+                        <input id="postCode" type="text"></input>
+                    </td>
+                    <td>国
+			                <br />
+                        <input id="country" type="text"></input>
+                    </td>
+                </tr>
+            </table>
+            <br />
+            <input id="addRow" type="button" value="行の追加"></input>
+
+        </fieldset>
+    </div>
+
+
+    
+    
+
+    
+    <table id="grid">
+    </table>
+
+    <div class="api-viewer"></div>
