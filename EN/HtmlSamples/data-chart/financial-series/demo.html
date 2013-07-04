@@ -1,0 +1,30 @@
+<script src="http://igniteuisamples.dev.infragistics.local/13-1/js/modernizr.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.0/jquery-ui.min.js"></script>
+<script src="http://cdn-na.infragistics.com/jquery/20131/beta/js/infragistics.core.js"></script>
+<script src="http://cdn-na.infragistics.com/jquery/20131/beta/js/infragistics.dv.js"></script>
+<link href="http://cdn-na.infragistics.com/jquery/20131/beta/css/themes/infragistics/infragistics.theme.css" rel="stylesheet"></link>
+<link href="http://cdn-na.infragistics.com/jquery/20131/beta/css/structure/infragistics.css" rel="stylesheet"></link>
+
+<script id="tooltipTemplate" type="text/x-jquery-tmpl">
+        <div id="tooltip" class="ui-widget-content ui-corner-all">
+            <span id="tooltipValue">Open: ${item.Open}</span><br/>
+            <span id="Span1">High: ${item.High}</span><br/>
+            <span id="Span2">Low: ${item.Low}</span><br/>
+            <span id="Span3">Close: ${item.Close}</span><br/>
+        </div>
+    </script>
+
+<table>
+        <tr>
+            <th>Candlestick</th><th>OHLC</th>
+        </tr>
+        <tr>
+            <td>
+                <div id="candlestickChart" class="chartElement"></div>
+            </td>
+            <td>
+                <div id="ohlcChart" class="chartElement"></div>
+            </td>
+        </tr>
+    </table>
