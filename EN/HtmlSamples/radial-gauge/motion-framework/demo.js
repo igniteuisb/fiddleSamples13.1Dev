@@ -1,5 +1,5 @@
 $(function () {
-            
+
             $("#radialgauge").igRadialGauge({
                 width: "500px",
                 height: "500px",
@@ -34,71 +34,80 @@ $(function () {
                     brush: "#D3404B "
                 }]
             });
-            $("#gaugeSettings").change(function (e) {
-                var setting = $(this).val();
+
+            function ChangeSelection(setting) {                
                 if (setting == "setting1")
                     setting1();
                 else if (setting == "setting2")
                     setting2();
                 else if (setting == "setting3")
                     setting3();
+            }
+
+            $("#gaugeSettings").change(function (e) {
+                var setting = $(this).val();
+                ChangeSelection(setting);
             });
 
-           function setting1 () {
-                    $("#radialgauge").igRadialGauge({
-                        formatLabel: null,
-                        alignLabel: null,
-                        transitionDuration: 2000,
-                        minimumValue: 0,
-                        maximumValue: 10,
-                        labelInterval: NaN,
-                        needleEndExtent: NaN,
-                        scaleStartAngle: 135,
-                        scaleEndAngle: 45,
-                        scaleEndExtent: .57,
-                        needleBrush: null,
-                        needleOutline: null,
-                        backingBrush: "#FFFFFF",
-                        scaleBrush: "#333",
-                        tickBrush: null,
-                        minorTickBrush: null,
-                        backingOutline: "#FFFFFF",
-                        needlePivotShape: "circleOverlay",
-                        needleShape: "needle",
-                        needlePivotWidthRatio: .2,
-                        fontBrush: "black",
-                        value: 1
-                    });
+            //Apply the setting on initial load
+            var setting = $("#gaugeSettings").val();
+            ChangeSelection(setting);
 
-                    $("#radialgauge").igRadialGauge("option", "ranges", [{ name: "range1", remove: true }]);
-                    $("#radialgauge").igRadialGauge("option", "ranges", [{ name: "range2", remove: true }]);
-                    $("#radialgauge").igRadialGauge("option", "ranges", [{ name: "range3", remove: true }]);
+            function setting1 () {
+                $("#radialgauge").igRadialGauge({
+                    formatLabel: null,
+                    alignLabel: null,
+                    transitionDuration: 2000,
+                    minimumValue: 0,
+                    maximumValue: 10,
+                    labelInterval: NaN,
+                    needleEndExtent: NaN,
+                    scaleStartAngle: 135,
+                    scaleEndAngle: 45,
+                    scaleEndExtent: .57,
+                    needleBrush: null,
+                    needleOutline: null,
+                    backingBrush: "#FFFFFF",
+                    scaleBrush: "#333",
+                    tickBrush: null,
+                    minorTickBrush: null,
+                    backingOutline: "#FFFFFF",
+                    needlePivotShape: "circleOverlay",
+                    needleShape: "needle",
+                    needlePivotWidthRatio: .2,
+                    fontBrush: "black",
+                    value: 1
+                });
 
-                    $("#radialgauge").igRadialGauge("option", "ranges", [{
-                        name: "range1",
-                        startValue: 0,
-                        endValue: 3,
-                        outerStartExtent: .6,
-                        outerEndExtent: .66,
-                        brush: "#A4bA29 "
-                    }, {
-                        name: "range2",
-                        startValue: 3,
-                        endValue: 7,
-                        outerStartExtent: .66,
-                        outerEndExtent: .72,
-                        brush: "#FDBD48 "
-                    }, {
-                        name: "range3",
-                        startValue: 7,
-                        endValue: 10,
-                        outerStartExtent: .72,
-                        outerEndExtent: .78,
-                        brush: "#D3404B "
-                    }]);
+                $("#radialgauge").igRadialGauge("option", "ranges", [{ name: "range1", remove: true }]);
+                $("#radialgauge").igRadialGauge("option", "ranges", [{ name: "range2", remove: true }]);
+                $("#radialgauge").igRadialGauge("option", "ranges", [{ name: "range3", remove: true }]);
+
+                $("#radialgauge").igRadialGauge("option", "ranges", [{
+                    name: "range1",
+                    startValue: 0,
+                    endValue: 3,
+                    outerStartExtent: .6,
+                    outerEndExtent: .66,
+                    brush: "#A4bA29 "
+                }, {
+                    name: "range2",
+                    startValue: 3,
+                    endValue: 7,
+                    outerStartExtent: .66,
+                    outerEndExtent: .72,
+                    brush: "#FDBD48 "
+                }, {
+                    name: "range3",
+                    startValue: 7,
+                    endValue: 10,
+                    outerStartExtent: .72,
+                    outerEndExtent: .78,
+                    brush: "#D3404B "
+                }]);
             }
-           
-           function setting2 () {
+
+            function setting2 () {
                 $("#radialgauge").igRadialGauge({
                     formatLabel: null,
                     alignLabel: null,
@@ -149,8 +158,8 @@ $(function () {
                     brush: "#D3404B"
                 }]);
             }
-            
-           function setting3 () {
+
+            function setting3 () {
                 $("#radialgauge").igRadialGauge({
                     needleBrush: "rgba(40,40,40, 1)",
                     needleOutline: "rgba(40,40,40, 1)",
