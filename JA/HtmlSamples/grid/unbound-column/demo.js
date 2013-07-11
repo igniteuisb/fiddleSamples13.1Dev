@@ -118,7 +118,7 @@ $(function () {
                     { headerText: "プロモーション", key: "IsPromotion", dataType: "bool", unbound: true, format: "checkbox" },
                     {
                         headerText: "合計", key: "Total", dataType: "number", unbound: true,
-                        formula: function CalculateTotal(data, grid) { return data["UnitPrice"] * data["UnitsInStock"]; }, template: "Total: ${Total}"
+                        formula: function CalculateTotal(data, grid) { return data["UnitPrice"] * data["UnitsInStock"]; }, template: "合計: ${Total}"
                     }
                 ],
 
