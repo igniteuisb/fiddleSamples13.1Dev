@@ -14,7 +14,7 @@ $(function () {
                 scaleEndAngle: 60,
                 scaleStartExtent: 0.70,
                 scaleEndExtent: 0.79,
-                scaleOversweep: 0,
+                scaleOversweep: 4,
                 tickStartExtent: 0.62,
                 tickEndExtent: 0.69,
                 minorTickStartExtent: 0.65,
