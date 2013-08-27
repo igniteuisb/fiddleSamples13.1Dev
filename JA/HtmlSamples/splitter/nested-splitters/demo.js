@@ -17,7 +17,7 @@ $(function () {
                 verticalZoomable: true,
                 horizontalZoomable: true,
                 overviewPlusDetailPaneVisibility: "visible",
-                overviewPlusDetailPaneBackgroundImageUri: "http://igniteuisamples.ja.dev.infragistics.local/13-1/images/samples/splitter/world.png",
+                overviewPlusDetailPaneBackgroundImageUri: "http://jp.dev.igniteui.local/13-1/images/samples/splitter/world.png",
                 panModifier: "control",
                 backgroundContent: {
                     type: "openStreet"

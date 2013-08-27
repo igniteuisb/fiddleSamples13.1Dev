@@ -7,7 +7,7 @@ $(function () {
                 ],
                 width: 720,
                 height: 560,
-                posterUrl: "http://igniteuisamples.ja.dev.infragistics.local/13-1/images/samples/video-player/quince-intro-1.png",
+                posterUrl: "http://jp.dev.igniteui.local/13-1/images/samples/video-player/quince-intro-1.png",
                 fullscreen: false,
                 browserControls: false,
                 autohide: true,
@@ -16,7 +16,7 @@ $(function () {
                 title: "Quince プレゼンテーション パート 1",
                 relatedVideos: [
 					{
-					    imageUrl: "http://igniteuisamples.ja.dev.infragistics.local/13-1/images/samples/video-player/quince-intro-2.png",
+					    imageUrl: "http://jp.dev.igniteui.local/13-1/images/samples/video-player/quince-intro-2.png",
 					    title: "Quince プレゼンテーション パート 1",
 					    css: "relatedVideosBanner",
 					    sources: ["http://dl.infragistics.com/pg/2011-1/web/shared/videoplayer/videos/QuinceIntro_Part3_1.h264.mp4",

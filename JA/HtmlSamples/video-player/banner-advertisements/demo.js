@@ -10,7 +10,7 @@ var alternate = true;
                 ],
                 width: 720,
                 height: 272,
-                posterUrl: 'http://igniteuisamples.ja.dev.infragistics.local/13-1/images/samples/video-player/ig-pres.png',
+                posterUrl: 'http://jp.dev.igniteui.local/13-1/images/samples/video-player/ig-pres.png',
                 fullscreen: false,
                 browserControls: false,
                 autohide: false,
@@ -18,7 +18,7 @@ var alternate = true;
                 autohideDelay: 2000,
                 title: 'Infragistics プレゼンテーション',
                 banners: [{
-                    imageUrl: 'http://igniteuisamples.ja.dev.infragistics.local/13-1/images/samples/video-player/banner.png',
+                    imageUrl: 'http://jp.dev.igniteui.local/13-1/images/samples/video-player/banner.png',
                     link: 'http://quince.infragistics.com/',
                     times: [5, 20, 60],
                     visible: false,

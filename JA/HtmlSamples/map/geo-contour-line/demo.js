@@ -4,7 +4,7 @@ $(function () {
                 verticalZoomable: true,
                 horizontalZoomable: true,
                 overviewPlusDetailPaneVisibility: "visible",
-                overviewPlusDetailPaneBackgroundImageUri: "http://igniteuisamples.ja.dev.infragistics.local/13-1/images/samples/maps/world.png",
+                overviewPlusDetailPaneBackgroundImageUri: "http://jp.dev.igniteui.local/13-1/images/samples/maps/world.png",
                 series: [{
                     type: "geographicContourLine",
                     name: "precipitation",
@@ -18,7 +18,7 @@ $(function () {
                     longitudeMemberPath: "pointX",
                     latitudeMemberPath: "pointY",
                     valueMemberPath: "value",
-                    triangulationDataSource: "http://igniteuisamples.ja.dev.infragistics.local/13-1/data-files/shapes/nws_precip_2011091820.itf"
+                    triangulationDataSource: "http://jp.dev.igniteui.local/13-1/data-files/shapes/nws_precip_2011091820.itf"
                 }],
                 windowResponse: "deferred",
                 windowRect: {

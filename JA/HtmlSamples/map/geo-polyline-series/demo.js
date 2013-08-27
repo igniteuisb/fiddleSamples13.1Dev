@@ -6,7 +6,7 @@ $(function () {
                 verticalZoomable: true,
                 horizontalZoomable: true,
                 overviewPlusDetailPaneVisibility: "visible",
-                overviewPlusDetailPaneBackgroundImageUri: "http://igniteuisamples.ja.dev.infragistics.local/13-1/images/samples/maps/world.png",
+                overviewPlusDetailPaneBackgroundImageUri: "http://jp.dev.igniteui.local/13-1/images/samples/maps/world.png",
                 backgroundContent: {
                     type: "openStreet"
                 },
@@ -14,8 +14,8 @@ $(function () {
                     type: "geographicPolyline",
                     name: "naRoads",
                     shapeMemberPath: "points",
-                    shapeDataSource: "http://igniteuisamples.ja.dev.infragistics.local/13-1/data-files/shapes/north_america_primary_roads.shp",
-                    databaseSource: "http://igniteuisamples.ja.dev.infragistics.local/13-1/data-files/shapes/north_america_primary_roads.dbf",
+                    shapeDataSource: "http://jp.dev.igniteui.local/13-1/data-files/shapes/north_america_primary_roads.shp",
+                    databaseSource: "http://jp.dev.igniteui.local/13-1/data-files/shapes/north_america_primary_roads.dbf",
                     outline: "grey"
                 }],
                 windowResponse: "immediate",

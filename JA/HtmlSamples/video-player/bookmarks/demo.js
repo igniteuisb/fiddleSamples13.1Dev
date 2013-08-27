@@ -6,7 +6,7 @@ $(function () {
 						'http://dl.infragistics.com/pg/2011-1/web/shared/videoplayer/videos/Infragistics_Presentation_lowRes_1.theora.ogv'
                 ],
                 width: 720,
-                posterUrl: 'http://igniteuisamples.ja.dev.infragistics.local/13-1/images/samples/video-player/ig-pres.png',
+                posterUrl: 'http://jp.dev.igniteui.local/13-1/images/samples/video-player/ig-pres.png',
                 fullscreen: false,
                 browserControls: false,
                 autohide: false,
