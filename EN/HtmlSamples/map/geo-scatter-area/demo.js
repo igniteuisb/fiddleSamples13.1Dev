@@ -4,7 +4,7 @@ $(function () {
                 verticalZoomable: true,
                 horizontalZoomable: true,
                 overviewPlusDetailPaneVisibility: "visible",
-                overviewPlusDetailPaneBackgroundImageUri: "http://igniteuisamples.dev.infragistics.local/13-1/images/samples/maps/world.png",
+                overviewPlusDetailPaneBackgroundImageUri: "http://dev.igniteui.local/13-1/images/samples/maps/world.png",
                 series: [{
                     type: "geographicScatterArea",
                     name: "precipitation",
@@ -20,7 +20,7 @@ $(function () {
                     longitudeMemberPath: "pointX",
                     latitudeMemberPath: "pointY",
                     colorMemberPath: "value",
-                    triangulationDataSource: "http://igniteuisamples.dev.infragistics.local/13-1/data-files/shapes/nws_precip_2011091820.itf"
+                    triangulationDataSource: "http://dev.igniteui.local/13-1/data-files/shapes/nws_precip_2011091820.itf"
                 }],
                 windowResponse: "deferred",
                 windowRect: {

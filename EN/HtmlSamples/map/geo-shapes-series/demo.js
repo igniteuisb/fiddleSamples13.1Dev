@@ -6,7 +6,7 @@ $(function () {
                 verticalZoomable: true,
                 horizontalZoomable: true,
                 overviewPlusDetailPaneVisibility: "visible",
-                overviewPlusDetailPaneBackgroundImageUri: "http://igniteuisamples.dev.infragistics.local/13-1/images/samples/maps/world.png",
+                overviewPlusDetailPaneBackgroundImageUri: "http://dev.igniteui.local/13-1/images/samples/maps/world.png",
                 backgroundContent: {
                     type: "openStreet"
                 },
@@ -15,8 +15,8 @@ $(function () {
                     name: "indianLands",
                     markerType: "automatic",
                     shapeMemberPath: "points",
-                    shapeDataSource: 'http://igniteuisamples.dev.infragistics.local/13-1/data-files/shapes/indlanp020.shp',
-                    databaseSource: 'http://igniteuisamples.dev.infragistics.local/13-1/data-files/shapes/indlanp020.dbf',
+                    shapeDataSource: 'http://dev.igniteui.local/13-1/data-files/shapes/indlanp020.shp',
+                    databaseSource: 'http://dev.igniteui.local/13-1/data-files/shapes/indlanp020.dbf',
                     brush: "rgba(68,138,223,.6)",
                     outline: "rgba(34,108,200,1)"
                 }],

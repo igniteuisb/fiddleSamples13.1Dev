@@ -5,7 +5,7 @@ $(function () {
                  verticalZoomable: true,
                  horizontalZoomable: true,
                  overviewPlusDetailPaneVisibility: "visible",
-                 overviewPlusDetailPaneBackgroundImageUri: "http://igniteuisamples.dev.infragistics.local/13-1/images/samples/maps/world.png",
+                 overviewPlusDetailPaneBackgroundImageUri: "http://dev.igniteui.local/13-1/images/samples/maps/world.png",
                  panModifier: "control",
                  backgroundContent: {
                      type: "openStreet"
